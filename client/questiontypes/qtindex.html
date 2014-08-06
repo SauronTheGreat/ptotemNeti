@@ -1,0 +1,8 @@
+<template name="questionTypeIndex">
+    <div>
+        {{#each questiontypes}}
+        <div>{{name}} - <a href="/question_type/edit/{{_id}}">Edit</a> -  <button class="remove-btn">Remove</button></div>
+        {{/each}}
+    </div>
+    <a href="/question_type/new">New Question Type</a>
+</template>

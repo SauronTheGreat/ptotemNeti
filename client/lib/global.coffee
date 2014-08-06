@@ -1,0 +1,2 @@
+@setType = (typeid)->
+    @currentType = typeid
