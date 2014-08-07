@@ -8,3 +8,8 @@ autopublish
 insecure
 iron-router
 coffeescript
+accounts-base
+accounts-password
+accounts-ui
+bootstrap
+spiderable

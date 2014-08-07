@@ -2,8 +2,10 @@ Template.questionTypeNew.events
   "submit #newQuestionType":(e)->
     name = $("#qtname").val()
     html = $("#qthtml").val()
-
-    questionTypes.update({_id:currentType},{$set:{name:name,html:html}},{ upsert: true })
+    if currentType?
+      questionTypes.update({_id:currentType},{$set:{name:name,html:html}},{ upsert: true })
+    else
+      questionTypes.insert({name:name,html:html})
     window.location = "/question_types"
     false
 

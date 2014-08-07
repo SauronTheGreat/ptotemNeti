@@ -1,0 +1,8 @@
+<template name="EventsIndex">
+    <div>
+        {{#each events}}
+        <div>{{name}} - <a href="/events/edit/{{_id}}">Edit</a> -  <button class="remove-event-btn">Remove</button></div>
+        {{/each}}
+    </div>
+    <a href="/events/new">New Events </a>
+</template>

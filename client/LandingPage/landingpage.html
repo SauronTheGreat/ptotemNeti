@@ -1,0 +1,110 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<template name="landingPage">
+    <form id="login-form" action="action">
+        <div>
+            <input type="email" id="login-email" />
+            <input type="password" id="login-password" />
+            <input type="submit" id="login-button" value="Sign in" />
+        </div>
+    </form>
+    <form id="register-form" action="action">
+        <div>
+            <input type="email" id="account-email" />
+            <input type="password" id="account-password" />
+            <input type="submit" id="create-account" value="Create an Account" />
+        </div>
+    </form>
+
+    <!--<div class="landing-wrapper">-->
+        <!--<div class="logo-container">-->
+            <!--<div class="logo-content">-->
+
+                <!--<div class="logo">-->
+                    <!--<div class="landing-app-title">{{ getAppName}}</div>-->
+                    <!--<i class="icon hiero-logo ico-moon-icon-2em landing-logo"></i>-->
+                <!--</div>-->
+                <!--<div class="about-text">-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="login-form">-->
+            <!--<div class="form-main-box">-->
+
+                <!--<div class="sign-in-form-box">-->
+                    <!--{{> signInForm}}-->
+                <!--</div>-->
+                <!--<br>OR<br><br>-->
+                <!--<div class="sign-up-form-box">-->
+                    <!--{{>signUpForm}}-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</template>
+
+
+<template name="signInForm">
+    Sign In :-
+    <div class="form-box-2">
+        <form id="login" method="post">
+            <div class="hp-input-container">
+                <input class="hp-form-input hp-form-input-full landing-input " type="email" name="email"
+                       placeholder="Your Email Address">
+            </div>
+            <div class="hp-input-container">
+                <input class="hp-form-input hp-form-input-full landing-input " type="password" name="password"
+                       placeholder="Your Password">
+            </div>
+
+            <div class="form-sign-in-button">
+                <button type="submit">SIGN IN</button>
+            </div>
+        </form>
+
+    </div>
+</template>
+
+<template name="signUpForm">
+    Sign Up :-
+    <div class="form-box-2">
+        <form id="register" method="post">
+            <div class="hp-input-container">
+                <input class="hp-form-input hp-form-input-full landing-input " type="email" name="email"
+                       placeholder="Your Email Address">
+            </div>
+            <div class="hp-input-container">
+                <input class="hp-form-input hp-form-input-full landing-input " type="text" name="username"
+                       placeholder="Create a username">
+            </div>
+            <div class="hp-input-container">
+                <input class="hp-form-input hp-form-input-full landing-input " type="password" name="password"
+                       placeholder="Create a password">
+            </div>
+            <div class="hp-input-container">
+                <input class="hp-form-input landing-input " style="width: 45%;" type="text" name="firstname"
+                       placeholder="First name">
+                <input class="hp-form-input landing-input " style="float: right;width: 45%;" name="lastname"
+                       placeholder="Last name">
+            </div>
+            <div class="form-sign-in-button">
+                <button type="submit">SIGN UP</button>
+            </div>
+        </form>
+
+    </div>
+
+</template>

@@ -1,0 +1,9 @@
+<template name="StaticParameterIndex">
+    <div>
+        {{#each statictypes}}
+        <div>{{name}} - <a href="/static_parameter/edit/{{_id}}">Edit</a> - <button class="remove-parameter-btn">Remove</button></div>
+        {{/each}}
+    </div>
+    <a href="/statictype/new">New static parameter</a>
+</template>
+
